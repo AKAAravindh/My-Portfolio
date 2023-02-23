@@ -11,6 +11,10 @@ body {
   /* width: 100vw; */
 }
 
+#body{
+  display: none;
+}
+
 .div-top {
   background-color: #02000b;
   width: 100%;
@@ -32,6 +36,7 @@ body {
   font-weight: 500;
   font-size: 1.2rem;
   padding: 20px 0px;
+  /* margin-top: -100px; */
 }
 
 .nav-icon {
@@ -322,6 +327,11 @@ span {
 
 .section3 {
   width: 100%;
+  min-height: 790px;
+}
+
+.section4 {
+  height: 500px;
 }
 
 /* ! Copied */
@@ -404,7 +414,6 @@ span {
   margin: 0;
 }
 
-
 .container {
   width: 100%;
   height: auto;
@@ -413,12 +422,13 @@ span {
   padding-top: 100px;
   margin-bottom: 160px;
 }
-
 .row1 {
   display: flex;
   flex-direction: column;
   /* background-color: red; */
   color: white;
+  display: none;
+  transition: display 1s linear;
 }
 
 .row1 h1 {
@@ -486,6 +496,8 @@ span {
   flex-direction: column;
   /* background-color: red; */
   color: white;
+  display: none;
+  transition: display 1s linear;
 }
 
 .row2 h1 {
@@ -619,4 +631,18 @@ span {
   .row h1 span {
     font-size: 1.5rem;
   }
+}
+
+.row {
+  min-height: 215px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #0a192f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #64ffda;
+  border-radius: 5px;
 }
