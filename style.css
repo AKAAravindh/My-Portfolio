@@ -2,6 +2,10 @@
   --t: 0.15s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -9,6 +13,7 @@ body {
   position: relative;
   color: #8892b0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 #body {
