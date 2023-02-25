@@ -335,7 +335,7 @@ span {
   height: min-content;
   background-color: transparent;
   padding: 200px 0;
-  /* overflow: hidden; */
+  overflow: hidden;
   max-width: 100%;
 }
 
