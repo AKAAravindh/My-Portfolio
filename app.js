@@ -8,19 +8,31 @@ setInterval(visible, 3000)
 
 const aboutSection = document.getElementById('section3');
 const row1 = document.getElementById('row1')
+
+window.addEventListener('scroll', () => {
+    const sectionPos = aboutSection.getBoundingClientRect().top;
+    const screenPos = window.innerHeight;
+    console.log("Screen position =", sectionPos);
+
+    if (sectionPos < (screenPos / 2)) {
+        row1.style.display = 'inline-block'
+    }
+    else if (sectionPos >= screenPos) {
+        row1.style.display = 'none'
+    }
+})
+
 const row2 = document.getElementById('row2')
 
 window.addEventListener('scroll', () => {
     const sectionPos = aboutSection.getBoundingClientRect().top;
     const screenPos = window.innerHeight;
-    console.log("Screen position =",sectionPos);
+    console.log("Screen position =", sectionPos);
 
-    if (sectionPos < (screenPos / 2)) {
-        row1.style.display = 'inline-block'
+    if (sectionPos < (screenPos / 4.5)) {
         row2.style.display = 'inline-block'
     }
-    else {
-        row1.style.display = 'none'
+    else if (sectionPos >= screenPos) {
         row2.style.display = 'none'
     }
 })
@@ -38,7 +50,7 @@ window.addEventListener('scroll', () => {
     if (sectionPos < (screenPos / 1.5)) {
         childOne.style.display = "block"
     }
-    else {
+    else if (sectionPos >= screenPos) {
         childOne.style.display = "none"
     }
 })
@@ -54,7 +66,7 @@ window.addEventListener('scroll', () => {
     if (sectionPos < (screenPos / 1.5)) {
         childTwo.style.display = "block"
     }
-    else {
+    else if (sectionPos >= screenPos) {
         childTwo.style.display = "none"
     }
 })
@@ -70,7 +82,7 @@ window.addEventListener('scroll', () => {
     if (sectionPos < (screenPos / 1.5)) {
         childThree.style.display = "block"
     }
-    else {
+    else if (sectionPos >= screenPos) {
         childThree.style.display = "none"
     }
 })
@@ -86,7 +98,7 @@ window.addEventListener('scroll', () => {
     if (sectionPos < (screenPos / 1.5)) {
         childFour.style.display = "block"
     }
-    else {
+    else if (sectionPos >= screenPos) {
         childFour.style.display = "none"
     }
 })
