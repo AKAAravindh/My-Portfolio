@@ -335,6 +335,8 @@ span {
   height: min-content;
   background-color: transparent;
   padding: 200px 0;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .section4 .row {
@@ -530,55 +532,6 @@ span {
   padding-right: 1.5rem;
 }
 
-@media screen and (max-width: 840px) {
-
-  .my-works-main .col1 {
-    width: 100%;
-  }
-
-  .my-works-main .col2 {
-    position: unset;
-    width: 100%;
-    position: absolute;
-    inset: 0;
-    align-items: flex-start;
-    background-color: #112240ac;
-    padding: 0 2rem;
-    border-radius: 10px;
-  }
-
-  .my-works-main .col2-2 {
-    position: unset;
-    width: 100%;
-    position: absolute;
-    inset: 0;
-    align-items: flex-start;
-    background-color: #112240ac;
-    padding: 0 2rem;
-    border-radius: 10px;
-  }
-
-  .project-details {
-    background-color: transparent;
-    width: 100%;
-    text-align: left;
-    padding: 0;
-  }
-
-  .my-works-main .child-span {
-    min-height: 0;
-    height: min-content;
-  }
-
-  .my-works-main .childs {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: relative;
-    isolation: isolate;
-    margin-bottom: 2rem;
-  }
-}
 
 /* ! Copied */
 
@@ -890,7 +843,55 @@ span {
   }
 }
 
+@media screen and (max-width: 840px) {
 
+  .my-works-main .col1 {
+    width: 100%;
+  }
+
+  .my-works-main .col2 {
+    position: unset;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    align-items: flex-start;
+    background-color: #112240ac;
+    padding: 0 2rem;
+    border-radius: 10px;
+  }
+
+  .my-works-main .col2-2 {
+    position: unset;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    align-items: flex-start;
+    background-color: #112240ac;
+    padding: 0 2rem;
+    border-radius: 10px;
+  }
+
+  .project-details {
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+  }
+
+  .my-works-main .child-span {
+    min-height: 0;
+    height: min-content;
+  }
+
+  .my-works-main .childs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    isolation: isolate;
+    margin-bottom: 2rem;
+  }
+}
 
 @media screen and (max-width: 765px) {
   .section2-contents>h1 {
