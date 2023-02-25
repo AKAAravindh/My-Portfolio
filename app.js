@@ -24,3 +24,69 @@ window.addEventListener('scroll', () => {
         row2.style.display = 'none'
     }
 })
+
+// 
+
+const child1Main = document.getElementById('one-main');
+const childOne = document.getElementById('child-one')
+
+window.addEventListener('scroll', () => {
+    const sectionPos = child1Main.getBoundingClientRect().top;
+    const screenPos = window.innerHeight;
+    console.log("Screen position =", sectionPos);
+
+    if (sectionPos < (screenPos / 1.5)) {
+        childOne.style.display = "block"
+    }
+    else {
+        childOne.style.display = "none"
+    }
+})
+
+const child2Main = document.getElementById('two-main');
+const childTwo = document.getElementById('child-two')
+
+window.addEventListener('scroll', () => {
+    const sectionPos = child2Main.getBoundingClientRect().top;
+    const screenPos = window.innerHeight;
+    console.log("Screen position =", sectionPos);
+
+    if (sectionPos < (screenPos / 1.5)) {
+        childTwo.style.display = "block"
+    }
+    else {
+        childTwo.style.display = "none"
+    }
+})
+
+const child3Main = document.getElementById('three-main');
+const childThree = document.getElementById('child-three')
+
+window.addEventListener('scroll', () => {
+    const sectionPos = child3Main.getBoundingClientRect().top;
+    const screenPos = window.innerHeight;
+    console.log("Screen position =", sectionPos);
+
+    if (sectionPos < (screenPos / 1.5)) {
+        childThree.style.display = "block"
+    }
+    else {
+        childThree.style.display = "none"
+    }
+})
+
+const child4Main = document.getElementById('four-main');
+const childFour = document.getElementById('child-four')
+
+window.addEventListener('scroll', () => {
+    const sectionPos = child1Main.getBoundingClientRect().top;
+    const screenPos = window.innerHeight;
+    console.log("Screen position =", sectionPos);
+
+    if (sectionPos < (screenPos / 1.5)) {
+        childFour.style.display = "block"
+    }
+    else {
+        childFour.style.display = "none"
+    }
+})
