@@ -416,7 +416,7 @@ span {
   color: black;
   right: 0;
   width: 50%;
-  min-width: 400px;
+  min-width: 40px;
   box-sizing: border-box;
   padding: 2rem 0;
   transform: translateX(-100vw);
@@ -432,7 +432,7 @@ span {
   color: black;
   left: 0;
   width: 50%;
-  min-width: 400px;
+  min-width: 40px;
   min-height: 100px;
   box-sizing: border-box;
   padding: 2rem 0;
@@ -876,6 +876,14 @@ span {
     width: 100%;
     text-align: left;
     padding: 0;
+  }
+
+  .col2 ul {
+    flex-wrap: wrap;
+  }
+
+  .col2-2 ul {
+    flex-wrap: wrap;
   }
 
   .my-works-main .child-span {
