@@ -8,7 +8,7 @@ body {
   background-color: #0a192f;
   position: relative;
   color: #8892b0;
-  /* width: 100vw; */
+  overflow-x: hidden;
 }
 
 #body {
@@ -328,7 +328,7 @@ span {
 }
 
 .section4 {
-  height: 500px;
+  height: min-content;
   background-color: transparent;
   padding: 200px 0;
 }
@@ -339,6 +339,12 @@ span {
 }
 
 .my-works-main {
+  background-color: #0a192f;
+  width: 100%;
+  min-height: 9900px;
+}
+
+.child-span {
   background-color: #0a192f;
   width: 100%;
   min-height: 50vh;

@@ -79,7 +79,7 @@ const child4Main = document.getElementById('four-main');
 const childFour = document.getElementById('child-four')
 
 window.addEventListener('scroll', () => {
-    const sectionPos = child1Main.getBoundingClientRect().top;
+    const sectionPos = child4Main.getBoundingClientRect().top;
     const screenPos = window.innerHeight;
     console.log("Screen position =", sectionPos);
 
