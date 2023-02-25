@@ -17,7 +17,7 @@ window.addEventListener('scroll', () => {
     if (sectionPos < (screenPos / 2)) {
         row1.style.display = 'inline-block'
     }
-    else if (sectionPos >= screenPos) {
+    else if (sectionPos >= (screenPos / 1.5)) {
         row1.style.display = 'none'
     }
 })
@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
     if (sectionPos < (screenPos / 4.5)) {
         row2.style.display = 'inline-block'
     }
-    else if (sectionPos >= screenPos) {
+    else if (sectionPos >= (screenPos / 1.5)) {
         row2.style.display = 'none'
     }
 })
