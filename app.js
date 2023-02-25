@@ -40,7 +40,8 @@ window.addEventListener('scroll', () => {
 // 
 
 const child1Main = document.getElementById('one-main');
-const childOne = document.getElementById('child-one')
+const childOne1 = document.getElementById('col1-1')
+const childOne2 = document.getElementById('col2-1')
 
 window.addEventListener('scroll', () => {
     const sectionPos = child1Main.getBoundingClientRect().top;
@@ -48,15 +49,18 @@ window.addEventListener('scroll', () => {
     console.log("Screen position =", sectionPos);
 
     if (sectionPos < (screenPos / 1.5)) {
-        childOne.style.display = "block"
+        childOne1.style.transform = "translateX(0)"
+        childOne2.style.transform = "translateX(0)"
     }
     else if (sectionPos >= screenPos) {
-        childOne.style.display = "none"
+        childOne1.style.transform = "translateX(-100vw)"
+        childOne2.style.transform = "translateX(100vw)"
     }
 })
 
 const child2Main = document.getElementById('two-main');
-const childTwo = document.getElementById('child-two')
+const childTwo1 = document.getElementById('col1-2')
+const childTwo2 = document.getElementById('col2-2')
 
 window.addEventListener('scroll', () => {
     const sectionPos = child2Main.getBoundingClientRect().top;
@@ -64,15 +68,18 @@ window.addEventListener('scroll', () => {
     console.log("Screen position =", sectionPos);
 
     if (sectionPos < (screenPos / 1.5)) {
-        childTwo.style.display = "block"
+        childTwo1.style.transform = "translateX(0)"
+        childTwo2.style.transform = "translateX(0)"
     }
     else if (sectionPos >= screenPos) {
-        childTwo.style.display = "none"
+        childTwo1.style.transform = "translateX(-100vw)"
+        childTwo2.style.transform = "translateX(100vw)"
     }
 })
 
 const child3Main = document.getElementById('three-main');
-const childThree = document.getElementById('child-three')
+const childThree1 = document.getElementById('col1-3')
+const childThree2 = document.getElementById('col2-3')
 
 window.addEventListener('scroll', () => {
     const sectionPos = child3Main.getBoundingClientRect().top;
@@ -80,15 +87,18 @@ window.addEventListener('scroll', () => {
     console.log("Screen position =", sectionPos);
 
     if (sectionPos < (screenPos / 1.5)) {
-        childThree.style.display = "block"
+        childThree1.style.transform = "translateX(0)"
+        childThree2.style.transform = "translateX(0)"
     }
     else if (sectionPos >= screenPos) {
-        childThree.style.display = "none"
+        childThree1.style.transform = "translateX(-100vw)"
+        childThree2.style.transform = "translateX(100vw)"
     }
 })
 
 const child4Main = document.getElementById('four-main');
-const childFour = document.getElementById('child-four')
+const childFour1 = document.getElementById('col1-4')
+const childFour2 = document.getElementById('col2-4')
 
 window.addEventListener('scroll', () => {
     const sectionPos = child4Main.getBoundingClientRect().top;
@@ -96,9 +106,11 @@ window.addEventListener('scroll', () => {
     console.log("Screen position =", sectionPos);
 
     if (sectionPos < (screenPos / 1.5)) {
-        childFour.style.display = "block"
+        childFour1.style.transform = "translateX(0)"
+        childFour2.style.transform = "translateX(0)"
     }
     else if (sectionPos >= screenPos) {
-        childFour.style.display = "none"
+        childFour1.style.transform = "translateX(-100vw)"
+        childFour2.style.transform = "translateX(100vw)"
     }
 })
