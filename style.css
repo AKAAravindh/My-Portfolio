@@ -2,8 +2,28 @@
   --t: 0.15s;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: #64ffda; */
+  background: linear-gradient(to bottom, #64ffda 10%, #0a192f);
+  border-radius: 5px;
+}
+
+.hov {
+  cursor: url("./images/src/cur/cursor2.cur"), default;
+}
+
 html {
   scroll-behavior: smooth;
+  cursor: url("./images/src/cur/cursor.cur"), default;
+}
+
+a {
+  cursor: url("./images/src/cur/cursor2.cur"), default;
 }
 
 body {
@@ -21,13 +41,17 @@ body {
 
 .div-top {
   background-color: #02000b;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   animation-delay: 3s;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.div-top::-webkit-scrollbar-thumb {
+  display: none;
 }
 
 /* div icon fade */
@@ -764,16 +788,6 @@ span {
 .row {
   opacity: 1;
   min-height: 215px;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  background-color: #0a192f;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #64ffda;
-  border-radius: 5px;
 }
 
 @media screen and (max-width: 1300px) {
